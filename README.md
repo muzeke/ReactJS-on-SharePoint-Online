@@ -112,7 +112,7 @@ spsave(coreOptions, creds, fileOptions)
 
 ---
 
-## Install `sp-rest-proxy` and `concurrently`
+## Install [`sp-rest-proxy`](https://www.npmjs.com/package/sp-rest-proxy) and [`concurrently`](https://www.npmjs.com/package/concurrently)
 
 Run:
 
