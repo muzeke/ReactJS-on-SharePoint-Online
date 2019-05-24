@@ -53,7 +53,7 @@ You should change your css extensions to scss!
  npm install spsave --save-dev
 ```
 
-### Create `sts.js` file in your parent project folder and copy the codes below (replace `siteUrl`, `username`, `password`, `folder`)
+> ### Create `sts.js` file in your parent project folder and copy the codes below (replace `siteUrl`, `username`, `password`, `folder`)
 
 ```javascript
 /*
@@ -100,29 +100,31 @@ Run:
   npm install sp-rest-proxy concurrently --save-dev
 ```
 
-### Add the following to the `scripts` object of your project `package.json`
+> ### Add the following to the `scripts` object of your project `package.json`
 
 ```JSON
     "proxy": "node ./api-server.js",
     "startServers": "concurrently --kill-others \"npm run proxy\" \"npm run start\""
 ```
 
-### Add API proxy setting into `package.json`
+> ### Add API proxy setting into `package.json`
 
 ```JSON
     "proxy": "http://localhost:8081"
      /*
-        This is the address which corresponds to sp-rest-proxy startup settings. Proxy setting is a webpack serve feature which transfers localhost request to the sp-rest-proxy
+        This is the address which corresponds to sp-rest-proxy startup settings.
+         Proxy setting is a webpack serve feature which transfers localhost request to the sp-rest-proxy
      */
 ```
 
 - Your `package.json` file should look something like on the example after this step.
 
-### Create proxy server script in your parent project folder
+> ### Create proxy server script in your parent project folder
 
 ```JS
     /*
-    * The name [api-server.js] is user defined, the below command should be executed in your terminal if you have `touch-cli` installed on your machine.
+    * The name [api-server.js] is user defined,
+    * the below command should be executed in your terminal if you have `touch-cli` installed on your machine.
     * if you don't have it, you can install it or create the file manually in your project folder.
     */
     touch api-server.js
@@ -141,7 +143,7 @@ Run:
 
 ```
 
-### Configure `sp-rest-proxy` :
+> ### Configure `sp-rest-proxy` :
 
 Run:
 
@@ -154,7 +156,7 @@ Run:
 -Check if your credentials are correcy by navigating to `http://localhost:8081` and executiny any REST CALL
 -Stop `sp-rest-proxy` , `Ctrl + C` on terminal
 
-### Start local dev serve:
+> ### Start local dev serve:
 
 Run:
 
@@ -178,7 +180,7 @@ fetch(`/_api/web`, {
 
 ## Navigate to your project folder (inside VSC) and open `package.json` file.
 
-### Add the following line to the JSON:
+> ### Add the following line to the JSON:
 
 ```
 "homepage": "SharePoint site assets folder"
@@ -194,7 +196,7 @@ Add the following to `package.json` inside `scripts` object
 "spo-build": "npm run build && node ./sts.js"
 ```
 
-### Your `package.json` should look something like this
+> ### Your `package.json` should look something like this
 
 ```JSON
 {
