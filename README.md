@@ -50,8 +50,8 @@ You should change your css extensions to scss!
 
 ## Install [SPA](https://github.com/s-KaiNet/spsave) via npm
 
--- This package will allow us to upload/save files/folder to your SharePoint Online site via node.js
--- Install only as a `devDependency` (--save-dev / -D)
+- This package will allow us to upload/save files/folder to your SharePoint Online site via node.js
+- Install only as a `devDependency` (--save-dev / -D)
 
 ```
  npm install spsave --save-dev
@@ -121,7 +121,7 @@ Run:
      */
 ```
 
-- Your `package.json` file should look something like on the example after this step.
+- Your `package.json` file should look something like [this](#ex1)
 
 ### Create proxy server script in your parent project folder
 
@@ -201,6 +201,8 @@ Add the following to `package.json` inside `scripts` object
 ```
 
 ### Your `package.json` should look something like this
+
+<a name='ex1'>&nbsp;</a>
 
 ```JSON
 {
