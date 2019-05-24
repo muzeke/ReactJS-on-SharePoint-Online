@@ -4,11 +4,15 @@
 - This does not use SPFx. This development setup is designed to be used if you are using a content editor in SPO to develop your site.
 - I documented this as I had a very hard time making ReactJS development work with SharePoint Online and I can't really find a forum / documentation that discusses this kind of setup.
 
+---
+
 ## PC Requirements
 
 - Node.js and npm
 - Visual Studio Code
 - Command Prompt / Windows Powershell / Cmder , etc.
+
+---
 
 ## Install Facebook's [create-react-app](https://github.com/facebook/create-react-app)
 
@@ -16,11 +20,15 @@
  npm i create-react-app
 ```
 
+---
+
 ## Open your terminal, go to the directory where you want to create your project
 
 ```
  cd [foldername]
 ```
+
+---
 
 ## Create your project using create-react-app
 
@@ -31,12 +39,16 @@
  create-react-app myproject
 ```
 
+---
+
 ## Open your project in Visual studio code by running the following in your terminal
 
 ```
  cd myproject
  code .
 ```
+
+---
 
 ## Install `node-sass` to enable SASS in your project.
 
@@ -47,6 +59,8 @@ Run:
 ```
 
 You should change your css extensions to scss!
+
+---
 
 ## Install [SPA](https://github.com/s-KaiNet/spsave) via npm
 
@@ -95,6 +109,8 @@ spsave(coreOptions, creds, fileOptions)
     console.log(err);
   });
 ```
+
+---
 
 ## Install `sp-rest-proxy` and `concurrently`
 
@@ -182,6 +198,8 @@ fetch(`/_api/web`, {
 
 ```
 
+---
+
 ## Navigate to your project folder (inside VSC) and open `package.json` file.
 
 ### Add the following line to the JSON:
@@ -248,22 +266,32 @@ Add the following to `package.json` inside `scripts` object
 }
 ```
 
+---
+
 ## Try to build your project by running `npm run spo-build`
 
 - This will build your project files in the background (js, css, html, images will be bundled)
 - This will also run the sts.js file that we created earlier to upload the build files in your SharePoint Online Site
 - If you get any error from this point, it is more likely that you have missed a step in the above instructions
 
+---
+
 ## In your SharePoint Online Site, create a SharePoint page , Insert a content editor and link the index.html file that will be find in the build files uploaded to the folder in your SPO site
 
 If you are able to view React's default content ( The Spinning React Icon) then you have done all steps correctly.
+
+---
 
 ## Workflow
 
 - Develop project locally
 - Build the project by running `npm spo-build` to see it online
 
+---
+
 ### That's it. This should help you get started with your Project if you're working with SharePoint Online and you want to use ReactJS :)
+
+---
 
 ## Special Thanks To :
 
