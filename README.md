@@ -1,6 +1,6 @@
 # ReactJS-on-SharePoint-Online
 
-- If you want to use ReactJS in SharePoint Online, this steps can help you setup your development environment.
+- If you want to use ReactJS in SharePoint Online, this steps can help you setup your React local development environment.
 - This does not use SPFx. This development setup is designed to be used if you are using a content editor in SPO to develop your site.
 - I documented this as I had a very hard time making ReactJS development work with SharePoint Online and I can't really find a forum / documentation that discusses this kind of setup.
 
@@ -267,3 +267,5 @@ If you are able to view React's default content ( The Spinning React Icon) then 
 
 - [Andrew Kolyatkov](https://github.com/koltyakov) - blog @ [Getting started with React local development for SharePoint with sp-rest-proxy](http://blog.arvosys.com/2017/10/29/getting-started-with-react-local-development-for-sharepoint-with-sp-rest-proxy/index.html)
 - David Petersen - blog @ [Developing ReactJS Single Page Apps for SharePoint](http://whatsthesharepoint.com/2016/11/developing-reactjs-single-page-apps-for-sharepoint/)
+
+Please feel free to contact me if you have any suggestions or question @ [sebulinojohnezekiel@gmail.com](mailto:sebulinojohnezekiel@gmail.com)
