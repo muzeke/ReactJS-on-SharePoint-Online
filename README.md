@@ -53,7 +53,7 @@ You should change your css extensions to scss!
  npm install spsave --save-dev
 ```
 
-> ### Create `sts.js` file in your parent project folder and copy the codes below (replace `siteUrl`, `username`, `password`, `folder`)
+### Create `sts.js` file in your parent project folder and copy the codes below (replace `siteUrl`, `username`, `password`, `folder`)
 
 ```javascript
 /*
@@ -100,14 +100,14 @@ Run:
   npm install sp-rest-proxy concurrently --save-dev
 ```
 
-> ### Add the following to the `scripts` object of your project `package.json`
+### Add the following to the `scripts` object of your project `package.json`
 
 ```JSON
     "proxy": "node ./api-server.js",
     "startServers": "concurrently --kill-others \"npm run proxy\" \"npm run start\""
 ```
 
-> ### Add API proxy setting into `package.json`
+### Add API proxy setting into `package.json`
 
 ```JSON
     "proxy": "http://localhost:8081"
@@ -119,7 +119,7 @@ Run:
 
 - Your `package.json` file should look something like on the example after this step.
 
-> ### Create proxy server script in your parent project folder
+### Create proxy server script in your parent project folder
 
 ```JS
     /*
@@ -143,7 +143,7 @@ Run:
 
 ```
 
-> ### Configure `sp-rest-proxy` :
+### Configure `sp-rest-proxy` :
 
 Run:
 
@@ -156,7 +156,7 @@ Run:
 -Check if your credentials are correcy by navigating to `http://localhost:8081` and executiny any REST CALL
 -Stop `sp-rest-proxy` , `Ctrl + C` on terminal
 
-> ### Start local dev serve:
+### Start local dev serve:
 
 Run:
 
@@ -180,7 +180,7 @@ fetch(`/_api/web`, {
 
 ## Navigate to your project folder (inside VSC) and open `package.json` file.
 
-> ### Add the following line to the JSON:
+### Add the following line to the JSON:
 
 ```
 "homepage": "SharePoint site assets folder"
@@ -196,7 +196,7 @@ Add the following to `package.json` inside `scripts` object
 "spo-build": "npm run build && node ./sts.js"
 ```
 
-> ### Your `package.json` should look something like this
+### Your `package.json` should look something like this
 
 ```JSON
 {
@@ -249,3 +249,12 @@ Add the following to `package.json` inside `scripts` object
 - If you get any error from this point, it is more likely that you have missed a step in the above instructions
 
 ## In your SharePoint Online Site, create a SharePoint page , Insert a content editor and link the index.html file that will be find in the build files uploaded to the folder in your SPO site
+
+If you are able to view React's default content ( The Spinning React Icon) then you have done all steps correctly.
+
+## Workflow
+
+- Develop project locally
+- Build the project by running `npm spo-build` to see it online
+
+##### That's it. This should help you get started with your Project if you're working SharePoint Online and you want to use ReactJS :)
