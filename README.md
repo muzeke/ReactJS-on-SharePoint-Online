@@ -171,10 +171,10 @@ Run:
  npm run proxy
 ```
 
--Connection parameters will be prompted (`username`, `password`, `SharePoint Online WebAbsolute URL`)
--After completing the prompt, it will create a folder and file (in your project) "config/private.json". This file stores the basic configuration settings of sp-proxy.
--Check if your credentials are correcy by navigating to `http://localhost:8081` and executiny any REST CALL
--Stop `sp-rest-proxy` , `Ctrl + C` on terminal
+- Connection parameters will be prompted (`username`, `password`, `SharePoint Online WebAbsolute URL`)
+- After completing the prompt, it will create a folder and file (in your project) "config/private.json". This file stores the basic configuration settings of sp-proxy.
+- Check if your credentials are correcy by navigating to `http://localhost:8081` and executiny any REST CALL
+- Stop `sp-rest-proxy` , `Ctrl + C` on terminal
 
 ### Start local dev serve:
 
