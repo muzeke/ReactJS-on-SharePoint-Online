@@ -282,6 +282,18 @@ If you are able to view React's default content ( The Spinning React Icon) then 
 
 ---
 
+## Important Packages to mention
+
+- Axios `npm istall axios --save`
+- Promise Polyfill `npm install promise-polyfill --save-exact` , `js import 'promise-polyfill/src/polyfill';`
+- react-router-dom `npm install react-router-dom`
+- react-redux `npm install react-redux --save`
+- redux `npm install redux`
+- redux-thunk `npm install redux-thunk`
+- redux-saga `npm install redux-saga`
+
+---
+
 ## Workflow
 
 - Develop project locally
