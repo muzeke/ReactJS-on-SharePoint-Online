@@ -81,10 +81,25 @@ You should change your css extensions to scss!
  * folder - folder path where you would upload the build assets
  */
 
+var SP_PASS = process.argv[2];
+
+if (process.argv.length < 3) {
+  console.log("*ERROR*: Not enough arguments provided\n");
+  console.log("Usage....: node sts.js [SharePoint Password]");
+
+  console.log("Example..: node sts.js myVeryLongPassword!");
+  console.log(
+    "Usage with spo-build ....: npm run spo-build [SharePoint Password]"
+  );
+  console.log("Example..: npm run spo-build myVeryLongPassword!");
+
+  process.exit(-1);
+}
+
 var spsave = require("spsave").spsave;
 
 var coreOptions = {
-  siteUrl: "https://mfc.sharepoint.com/sites/AnnualCompCycle-UAT/zeke/",
+  siteUrl: "https://mfc.sharepoint.com/sites/JobLibrary/",
   notification: true,
   checkin: true,
   checkinType: 1
@@ -92,11 +107,11 @@ var coreOptions = {
 
 var creds = {
   username: "John_E_Sebulino@mfcgd.com",
-  password: "sharepoint password here"
+  password: SP_PASS
 };
 
 var fileOptions = {
-  folder: "folder to upload the file",
+  folder: "Solutions/user-dashboard",
   glob: "build/**/*.*",
   base: "build"
 };
@@ -268,7 +283,7 @@ Add the following to `package.json` inside `scripts` object
 
 ---
 
-## Try to build your project by running `npm run spo-build`
+## Try to build your project by running `npm run spo-build [SharePoint Password]`
 
 - This will build your project files in the background (js, css, html, images will be bundled)
 - This will also run the sts.js file that we created earlier to upload the build files in your SharePoint Online Site
