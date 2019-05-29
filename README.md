@@ -242,7 +242,7 @@ Add the following to `package.json` inside `scripts` object
   "name": "react-api",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/sites/AnnualCompCycle-UAT/zeke/zekewebassets/zekeBuild",
+  "homepage": "/sites/sitename/Solutions/folder",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
