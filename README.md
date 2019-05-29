@@ -222,7 +222,7 @@ fetch(`/_api/web`, {
 ```
 "homepage": "SharePoint site assets folder"
 
-example : "homepage": "/sites/AnnualCompCycle-UAT/developerAssets"
+example : "homepage": "/sites/SiteName/folderAssetsName"
 ```
 
 and
