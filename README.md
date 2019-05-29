@@ -99,7 +99,7 @@ if (process.argv.length < 3) {
 var spsave = require("spsave").spsave;
 
 var coreOptions = {
-  siteUrl: "https://mfc.sharepoint.com/sites/JobLibrary/",
+  siteUrl: "site webabsoluteUrl",
   notification: true,
   checkin: true,
   checkinType: 1
